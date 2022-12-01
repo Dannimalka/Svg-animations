@@ -1,0 +1,114 @@
+.sun {
+  animation: sun 24s infinite linear;
+}
+.background {
+  animation: sky 24s infinite;
+}
+.cloud.one {
+  animation: clouds 24s infinite linear;
+}
+.cloud.two {
+  animation: clouds 30s infinite linear;
+}
+.cloud.three {
+  animation: clouds 20s infinite linear;
+}
+#min {
+  animation: time 1.5s infinite linear;
+  transform-box: fill-box;
+  transform-origin: 10px 8px;
+}
+#hour {
+  animation: time 12s infinite linear;
+  transform-box: fill-box;
+  transform-origin: 115px 9px;
+}
+
+#arm {
+  animation: arm 1.5s infinite ease-in-out;
+  transform-box: fill-box;
+  transform-origin: right;
+  animation-delay: 1s;
+}
+@keyframes time {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes arm {
+  0% {
+    transform: rotateZ(50deg);
+  }
+  50% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(50deg);
+  }
+}
+
+@keyframes sky {
+  0% {
+    background-color: rgb(4, 4, 45);
+  }
+  25% {
+    background-color: rgb(33, 182, 241);
+  }
+  50% {
+    background-color: rgb(33, 182, 241);
+  }
+  75% {
+    background-color: rgb(39, 39, 161);
+  }
+  100% {
+    background-color: rgb(14, 14, 88);
+  }
+}
+@keyframes sun {
+  0% {
+    transform: translate(-300px, 300px);
+    opacity: 0;
+  }
+  25% {
+    transform: translate(300px, 0px);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(800px, -100px);
+    opacity: 1;
+  }
+  75% {
+    transform: translate(1390px, 0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(1920px, 300px);
+    opacity: 0;
+  }
+}
+@keyframes clouds {
+  from {
+    left: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    left: 100%;
+    transform: translateX(0%);
+  }
+}
+@keyframes logo {
+  0% {
+    stroke: white;
+    stroke-dashoffset: 700;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke: tomato;
+  }
+}

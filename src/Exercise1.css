@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.earth {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.exerciseContainer {
+  background: black;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin: auto;
+}
+
+.exerciseContainer h1 {
+  padding-top: 30px;
+  color: white;
+}
+.exerciseContainer h2 {
+  color: white;
+}
+.exerciseContainer p {
+  color: white;
+}
+.rocket {
+  width: 200px;
+  position: absolute;
+  top: 40%;
+  left: 20%;
+}
+
+.exerciseButton {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+.homeButtons {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+/*
+.rocket {
+  animation: 5s Rocket ease-in-out infinite;
+  
+}
+
+Your code here
+@keyframes Rocket {
+}
+
+@keyframes rocket {
+
+}
+
+*/
